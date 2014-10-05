@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Rokkitt:400,700);
+
+* { margin: 0; padding: 0; }
+
+html {
+  background: url(../images/bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #C2222A;
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: #E91939;
+}
+
+#main {
+  width: 800px;
+  margin: 8em auto 20px;
+
+  /* text attributes */
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-shadow: 1px 2px 0px rgba(20,20,20,.6);
+  text-align: center;
+  font-size: 15px;
+}
+
+#main .logo {
+  height: 30px;
+  width: auto;
+  margin-bottom: 8px;
+}
+
+#main h2 {
+  font-family: 'Rokkitt', serif;
+  font-size: 60px;
+  margin: 30px 0 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+  /* text attributes */
+  color: #FFFFFF;
+  text-shadow: 0 4px 8px rgba(20,20,20,.6);
+}
+
+#main p { margin: 1em 60px 2em;}
+#flowing { margin: 0 0 4.6em; }
+
+/* Styling Mailchimp's Signup Form */
+
+div.mc-field-group input[type="email"] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+	width: 220px;
+  padding: 4px;
+  outline: none;
+
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+  -webkit-box-shadow: inset 0px 0px 10px 0px #eee;
+	-moz-box-shadow: inset 0px 0px 10px 0px #eee;
+	box-shadow: inset 0px 0px 10px 0px #eee;
+}
+
+div.mc-field-group input[type="email"]:focus {
+  border-color: #999;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #ddd;
+	-moz-box-shadow: inset 0px 0px 4px 0px #ddd;
+	box-shadow: inset 0px 0px 4px 0px #ddd;
+}
+
+input.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  position: relative;
+  vertical-align: top;
+  padding: 4px 6px;
+  background: #C2222A;
+  border: 0;
+  border-bottom: 2px solid #52021B;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #52021B;
+  box-shadow: inset 0 -2px #52021B;
+}
+
+input.button:active {
+  top: 2px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+#mce-response-container { margin-top: 4px; padding: 4px; text-shadow: none; height: 20px; }
+.mce-message { color: #FFF; margin: 4px 0; padding: 4px 10px; }
+
+/* Social Media Icons */
+
+#main .social-media { letter-spacing: 1em; }
+.icon-facebook, .icon-instagram, .icon-twitter, .icon-youtube {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-shadow: none;
+  transition: color 0.5s ease;
+}
+.icon-facebook:hover { color: #3b5998; }
+.icon-instagram:hover { color: #517fa4; }
+.icon-twitter:hover { color: #00aced; }
+.icon-youtube:hover { color: #bb0000; }
+
+/* Small Screens */
+
+@media all and (max-width: 700px) {
+  #main { width: 100%; margin: 40px auto 20px}
+  #main h2 { font-size: 30px; margin: 10px 0 0;}
+  #main p { margin: 1em 10% 2em; font-size: .82em; }
+  #main .logo { height: 60px; margin-bottom: 0; }
+  #flowing { margin: 0 0 0em; }
+
+  div.mc-field-group input[type="email"] { font-size: 12px; width: 180px; }
+  input.button { font-size: 12px; }
+  .mce-message { font-size: 12px; }
+  #main .logo { height: 18px; margin-bottom: 5px;}
+}
