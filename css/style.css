@@ -3,11 +3,14 @@
 * { margin: 0; padding: 0; }
 
 html {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
+
+  background: url(../images/bg.png) no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  background-color: #ffe24d;
 }
 
 a {
@@ -28,32 +31,36 @@ a:hover {
   /* text attributes */
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
-  color: #FFFFFF;
-  text-shadow: 1px 2px 0px rgba(20,20,20,.6);
+  color: #222222;
   text-align: center;
   font-size: 15px;
 }
 
 #main .logo {
-  height: 30px;
+  height: 40px;
   width: auto;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+#main .logo.delta {
+  margin-top: 1em;
+  height: 35px;
 }
 
 #main h2 {
   font-family: 'Rokkitt', serif;
-  font-size: 60px;
-  margin: 30px 0 15px;
+  font-size:25px;
   letter-spacing: 1px;
   font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 
   /* text attributes */
-  color: #FFFFFF;
-  text-shadow: 0 4px 8px rgba(20,20,20,.6);
+  color: #222222;
 }
 
 #main p { margin: 1em 60px 2em;}
-#flowing { margin: 0 0 4.6em; }
+#flowing { margin: 0 0 5.6em; }
 
 /* Styling Mailchimp's Signup Form */
 
@@ -118,7 +125,7 @@ input.button:active {
 #main .social-media { letter-spacing: 1em; }
 .icon-facebook, .icon-instagram, .icon-twitter, .icon-youtube {
   font-size: 1.2em;
-  color: #ffffff;
+  color: #FFFFFF;
   text-shadow: none;
   transition: color 0.5s ease;
 }
@@ -131,13 +138,14 @@ input.button:active {
 
 @media all and (max-width: 700px) {
   #main { width: 100%; margin: 40px auto 20px}
-  #main h2 { font-size: 30px; margin: 10px 0 0;}
+  #main h2 { font-size: 20px; margin: 5px 0 0;}
   #main p { margin: 1em 10% 2em; font-size: .82em; }
-  #main .logo { height: 60px; margin-bottom: 0; }
   #flowing { margin: 0 0 0em; }
 
   div.mc-field-group input[type="email"] { font-size: 12px; width: 180px; }
   input.button { font-size: 12px; }
   .mce-message { font-size: 12px; }
-  #main .logo { height: 18px; margin-bottom: 5px;}
+  #main .logo { height: 22px; margin-bottom: 5px;}
+  #main .logo.delta { margin-top: 1em; height: 25px;
+  }
 }
